@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - Zoopedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo"><span class="z">Zoo</span><span class="p">pedia</span></div>
+    <nav>
+      <a href="index.html" class="active">Beranda</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="kuis.html">Kuis</a>
+    </nav>
+    <div class="user-info">
+      Halo, <span class="uname" id="nama-user">Pengguna</span>
+      <button class="btn-logout" onclick="logout()">Keluar</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Selamat Datang di<br><span class="hl">Zoo</span><span class="hl2">pedia</span> 🦁</h1>
+    <p>Pelajari fakta-fakta seru tentang dunia hewan lewat kuis mitos atau fakta yang interaktif dan menyenangkan.</p>
+    <div class="hero-btns">
+      <a href="kuis.html" class="btn btn-primary">▶ Mulai Kuis</a>
+      <a href="kategori.html" class="btn btn-outline">Lihat Kategori Hewan</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Eksplorasi Zoopedia</p>
+    <div class="cards-grid">
+      <div class="card">
+        <span class="card-icon">❓</span>
+        <h3>Kuis Mitos atau Fakta</h3>
+        <p>Jawab 5 pertanyaan seru tentang hewan. Mana yang mitos, mana yang fakta?</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">📂</span>
+        <h3>Kategori Hewan</h3>
+        <p>Jelajahi Mamalia, Reptil, Amfibi, Burung, Ikan, dan Serangga beserta info menariknya.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">💡</span>
+        <h3>Fakta Unik</h3>
+        <p>Tiap jawaban dilengkapi penjelasan ilmiah yang mudah dipahami.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🎯</span>
+        <h3>Belajar Sambil Main</h3>
+        <p>Sistem kuis interaktif yang bikin belajar jadi nggak membosankan.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
