@@ -180,24 +180,6 @@ a { text-decoration: none; color: inherit; }
 
 .error-msg { color: var(--danger); font-size: 13px; margin-bottom: 10px; display: none; }
 .success-msg { color: var(--accent2); font-size: 13px; margin-bottom: 10px; display: none; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hero {
   padding: 56px 32px 44px;
   border-bottom: 1px solid var(--border);
