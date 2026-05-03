@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuis - Zoopedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo"><span class="z">Zoo</span><span class="p">pedia</span></div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="kuis.html" class="active">Kuis</a>
+    </nav>
+    <div class="user-info">
+      Halo, <span class="uname" id="nama-user">Pengguna</span>
+      <button class="btn-logout" onclick="logout()">Keluar</button>
+    </div>
+  </div>
+
+  <div class="kuis-wrapper">
+
+    <div class="kuis-topbar" id="kuis-topbar">
+      <h2>Kuis Mitos atau Fakta 🐾</h2>
+      <span class="soal-counter" id="soal-num">1 / 5</span>
+    </div>
+
+    <!-- Soal -->
+    <div class="soal-box" id="soal-box">
+      <div class="soal-img" id="soal-img">🐾</div>
+      <div class="soal-content">
+        <span class="soal-label">Mitos atau Fakta?</span>
+        <h3 id="soal-pertanyaan">Memuat soal...</h3>
+        <div class="jawaban-row">
+          <button class="btn-jawab btn-mitos" id="btn-mitos" onclick="jawab('mitos')">
+            ✕ &nbsp; MITOS
+          </button>
+          <button class="btn-jawab btn-fakta" id="btn-fakta" onclick="jawab('fakta')">
+            ✓ &nbsp; FAKTA
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hasil-box" id="hasil-box">
+      <div class="hasil-info" style="text-align:center;">
+        <h3 id="hasil-pesan">Bagus!</h3>
+        <p id="hasil-sub">Kamu sudah menyelesaikan kuis.</p>
+        <div class="hasil-stat-row" style="justify-content:center; margin-top:16px;">
+          <div class="hasil-stat benar-stat">
+            <span class="stat-num" id="stat-benar">0</span>
+            <span class="stat-label">✓ Benar</span>
+          </div>
+          <div class="hasil-stat salah-stat">
+            <span class="stat-num" id="stat-salah">0</span>
+            <span class="stat-label">✕ Salah</span>
+          </div>
+        </div>
+      </div>
+      <div class="hasil-btns" style="margin-top:24px;">
+        <a href="index.html" class="btn btn-primary">← Ke Beranda</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="snackbar" id="snackbar">
+    <div class="sb-top">
+      <span id="sb-icon">✅</span>
+      <span id="sb-status">FAKTA!</span>
+    </div>
+    <p class="sb-penjelasan" id="sb-penjelasan"></p>
+    <div class="sb-next" id="sb-next" onclick="lanjut()">Soal berikutnya →</div>
+  </div>
+
+  <script src="kuis.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
