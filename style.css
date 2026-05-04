@@ -313,7 +313,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 500;
 }
 
-/* ===== KUIS ===== */
 .kuis-wrapper {
   max-width: 640px;
   margin: 0 auto;
@@ -437,7 +436,6 @@ a { text-decoration: none; color: inherit; }
 
 .btn-jawab:disabled { opacity: 0.4; cursor: not-allowed; }
 
-/* ===== SNACKBAR ===== */
 .snackbar {
   position: fixed;
   bottom: -160px;
@@ -484,7 +482,6 @@ a { text-decoration: none; color: inherit; }
 }
 .sb-next:hover { color: var(--accent2); }
 
-/* ===== HASIL KUIS ===== */
 .hasil-box {
   background-color: var(--bg2);
   border: 1px solid var(--border);
@@ -524,7 +521,6 @@ a { text-decoration: none; color: inherit; }
 
 .divider { border: none; border-top: 1px solid var(--border); }
 
-/* ===== HASIL KUIS - LAYOUT BARU ===== */
 .hasil-top {
   display: flex;
   align-items: center;
@@ -578,7 +574,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 500;
 }
 
-/* ===== REKAP PER SOAL ===== */
 .rekap-list {
   display: flex;
   flex-direction: column;
