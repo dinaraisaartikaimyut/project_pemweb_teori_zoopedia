@@ -114,7 +114,7 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: center;
   background-color: var(--bg);
-  background-image:
+  background-image: none;
 }
 
 .auth-box {
